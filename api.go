@@ -11,7 +11,7 @@ import (
 const appid = "2015063000000001"
 const key = "12345678"
 
-func langdetect(src string) string {
+func langDetect(src string) string {
 	var json map[string]interface{}
 	req := httplib.Post("http://fanyi.baidu.com/langdetect")
 	req.Param("query", src).ToJSON(&json)

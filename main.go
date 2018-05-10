@@ -13,7 +13,7 @@ func main() {
 		os.Exit(0)
 	}
 	src := os.Args[1]
-	from := langdetect(src)
+	from := langDetect(src)
 	var to = "en"
 	if from != "zh" {
 		to = "zh"
